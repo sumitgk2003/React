@@ -6,10 +6,11 @@ import './App.css'
 function App() {
   let [counter,setCounter]=useState(0);
   function addCount(){
-    if(counter<20)
-    counter++;
+    //if(counter<20)
+    //counter++;
     console.log(counter);
-    setCounter(counter);
+    setCounter(prevCounter=>prevCounter+1);
+    setCounter(prevCounter=>prevCounter+1);
   }
   function removeCount(){
     if(counter>0)
