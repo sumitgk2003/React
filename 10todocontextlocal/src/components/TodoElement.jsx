@@ -19,7 +19,7 @@ export default function TodoElement({todoObject}){
       value={todoMsg}
       onChange={(e)=>setTodoMsg(e.target.value)}
       readOnly={!edit}
-      className={`${todoObject.completed?'bg-green-500':'bg-red-500 text-white'}`}
+      className={`${todoObject.completed?'bg-green-500 line-through':'bg-red-500 text-white'}`}
       />
       <button 
         onClick={()=>{
